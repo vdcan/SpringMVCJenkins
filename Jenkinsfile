@@ -25,7 +25,7 @@ pipeline {
           }
       steps { 
         script {
-          docker.build localhost:5000/docker-test + ":$BUILD_NUMBER"
+          docker.build localhost:5000/docker-test 
         }
        
         echo 'Pushing to Docker Registry...'
